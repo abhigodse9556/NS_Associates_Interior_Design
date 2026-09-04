@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Instrument+Sans:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --canvas: #1a1714;
+  --canvas-mid: #221f1b;
+  --stone: #c9b99a;
+  --stone-dim: #8a7d6b;
+  --cream: #f2ece0;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background: var(--canvas);
+  color: var(--cream);
+  font-family: "Instrument Sans", Inter, Arial, sans-serif;
+}
+
+::selection {
+  background: rgba(201, 185, 154, 0.32);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #151210;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b352d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--stone-dim);
+}
+
+.image-shade::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 35%, rgba(26, 23, 20, 0.86));
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.group:hover .image-shade::after {
+  opacity: 1;
+}
