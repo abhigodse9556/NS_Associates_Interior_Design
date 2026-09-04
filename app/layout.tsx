@@ -23,6 +23,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/assets/logo/favicon-refine.png" />
+      </head>
       <body>
         <Navbar />
         <main>{children}</main>

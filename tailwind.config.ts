@@ -9,14 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        canvas: "#1a1714",
-        "canvas-mid": "#221f1b",
-        "canvas-raised": "#2d2924",
-        stone: "#c9b99a",
-        "stone-dim": "#8a7d6b",
-        cream: "#f2ece0",
-        bronze: "#a67c52",
-        rule: "rgba(201, 185, 154, 0.15)",
+        canvas: "#ffffff",
+        "canvas-mid": "#f7f7f7",
+        "canvas-raised": "#ffffff",
+        stone: "#111111",
+        "stone-dim": "#737373",
+        cream: "#111111",
+        bronze: "#111111",
+        rule: "rgba(17, 17, 17, 0.12)",
       },
       fontFamily: {
         display: ["Fraunces", "Georgia", "serif"],

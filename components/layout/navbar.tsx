@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -35,7 +36,13 @@ export function Navbar() {
           className="font-display text-xl font-light tracking-wide text-cream"
           onClick={() => setOpen(false)}
         >
-          NS Associates
+          <Image
+            src="\assets\logo\ns_associates_logo_transparent.svg"
+            alt="NS Associates"
+            width={160}
+            height={200}
+            priority
+          />
         </Link>
         <ul className="hidden items-center gap-8 md:flex">
           {links.map((link) => (
